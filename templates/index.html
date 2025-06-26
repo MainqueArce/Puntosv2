@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Puntos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">Sistema de Puntos para Clientes</h2>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <a href="/registrar" class="btn btn-primary w-100">Registrar Cliente</a>
+      </div>
+      <div class="col-md-4">
+        <a href="/consultar" class="btn btn-info w-100">Consultar Puntos</a>
+      </div>
+      <div class="col-md-4">
+        <a href="/canjear" class="btn btn-warning w-100">Canjear Puntos</a>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h4>Sumar Puntos</h4>
+    <form action="/sumar" method="POST" class="row g-3">
+      <div class="col-md-6">
+        <input name="nombre" class="form-control" placeholder="Nombre del cliente" required>
+      </div>
+      <div class="col-md-3">
+        <input name="puntos" type="number" class="form-control" placeholder="Puntos" required>
+      </div>
+      <div class="col-md-3">
+        <button type="submit" class="btn btn-success w-100">Sumar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
